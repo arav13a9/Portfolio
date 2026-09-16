@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arav Mathur — B.Tech AI & DS | Communicator & Builder</title>
+    <meta name="description" content="Personal portfolio of Arav Mathur, a first-year B.Tech AI & DS student at JECRC Foundation, focused on communication, team building, and cinema.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        black: '#050505',
+                        surface: '#0A0A0A',
+                        card: '#111111',
+                        border: '#222222',
+                        muted: '#888888',
+                        accent: {
+                            blue: '#102A43',
+                            'blue-hover': '#123B5D',
+                            red: '#B91C1C',
+                            'red-bright': '#D32F2F'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Geist', 'sans-serif'],
+                        mono: ['IBM Plex Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom subtle scrollbar and selection */
+        ::selection {
+            background: #B91C1C;
+            color: #ffffff;
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #050505;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #222222;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #333333;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-black text-[#EDEDED] font-sans antialiased selection:bg-accent-red selection:text-white">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-border">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#hero" class="font-mono text-sm tracking-wider text-muted hover:text-white transition-colors">
+                AM<span class="text-accent-red">.</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-muted">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#now" class="hover:text-white transition-colors">Now</a>
+                <a href="#skills" class="hover:text-white transition-colors">Skills</a>
+                <a href="#experience" class="hover:text-white transition-colors">Journey</a>
+                <a href="#achievements" class="hover:text-white transition-colors">Achievements</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </nav>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest px-4 py-2 border border-border hover:border-accent-red text-white transition-colors">
+                <span>Let's Talk</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-accent-red animate-pulse"></span>
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-muted hover:text-white focus:outline-none" aria-label="Toggle Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-surface border-b border-border px-6 py-4 space-y-3 font-mono text-sm">
+            <a href="#about" class="block text-muted hover:text-white py-1">01. About</a>
+            <a href="#now" class="block text-muted hover:text-white py-1">02. Now</a>
+            <a href="#skills" class="block text-muted hover:text-white py-1">03. Skills</a>
+            <a href="#experience" class="block text-muted hover:text-white py-1">04. Journey</a>
+            <a href="#achievements" class="block text-muted hover:text-white py-1">05. Achievements</a>
+            <a href="#contact" class="block text-accent-red py-1">06. Contact</a>
+        </div>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <main class="max-w-5xl mx-auto px-6 pt-32 pb-24 space-y-32">
+
+        <!-- HERO SECTION -->
+        <section id="hero" class="min-h-[75vh] flex flex-col justify-center relative">
+            <div class="space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-surface border border-border text-xs font-mono text-muted">
+                    <span class="w-1.5 h-1.5 rounded-full bg-accent-red"></span>
+                    <span>B.Tech AI &amp; DS • JECRC Foundation</span>
+                </div>
+                
+                <h1 class="text-4xl sm:text-6xl md:text-7xl font-semibold tracking-tight text-white leading-[1.1]">
+                    ARAV MATHUR
+                </h1>
+
+                <p class="text-lg sm:text-xl text-muted max-w-2xl font-normal leading-relaxed">
+                    A good communicator, active listener, and team worker. Driven by an inner ambition to learn, build networks, and explore the worlds of technology and cinema.
+                </p>
+
+                <div class="pt-4 flex flex-wrap items-center gap-4">
+                    <a href="#contact" class="inline-flex items-center justify-center px-6 py-3 bg-white text-black font-medium text-sm hover:bg-[#E0E0E0] transition-colors">
+                        Get in Touch
+                    </a>
+                    <a href="#about" class="inline-flex items-center justify-center px-6 py-3 bg-surface border border-border text-white text-sm hover:border-muted transition-colors">
+                        Learn More <span class="ml-2 text-accent-red">↓</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Subtle Grid Accent Line -->
+            <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+            <div>
+                <span class="font-mono text-xs text-accent-red tracking-widest uppercase">01 / About</span>
+                <h2 class="text-2xl font-semibold text-white mt-2">Driven by curiosity and human connection.</h2>
+            </div>
+            
+            <div class="md:col-span-2 space-y-6 text-muted leading-relaxed">
+                <p class="text-lg text-[#D1D5DB]">
+                    I am a first-year B.Tech student, excited to learn and explore the world of AI and data science while actively mastering my soft skills. 
+                </p>
+                <p>
+                    Outside of academics, my mind is heavily anchored in cinema. I am unusually curious about stories, character arcs, motives, metaphors, visuals, and the deep underlying layers and emotions that movies carry. 
+                </p>
+                <p>
+                    When conflicts or arguments arise, I naturally step into the role of a mediator—looking at everyone's perspective to formulate a balanced, vital solution. I operate on a simple internal principle: <span class="text-white italic">"If you did no good to the world, there is no good in the world."</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- NOW / CURRENTLY SECTION -->
+        <section id="now" class="p-8 bg-surface border border-border rounded-none relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-accent-blue/10 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="flex items-center justify-between mb-6">
+                <span class="font-mono text-xs text-accent-red tracking-widest uppercase">02 / Currently</span>
+                <span class="inline-flex items-center gap-2 text-xs font-mono text-muted bg-black/40 px-3 py-1 border border-border">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span>
+                    Active Focus
+                </span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 font-mono text-sm">
+                <div class="space-y-1 p-4 bg-card border border-border">
+                    <span class="text-xs text-muted block">Learning</span>
+                    <span class="text-white font-medium">Python Language</span>
+                </div>
+                <div class="space-y-1 p-4 bg-card border border-border">
+                    <span class="text-xs text-muted block">Building</span>
+                    <span class="text-white font-medium">Communication &amp; Social Skills</span>
+                </div>
+                <div class="space-y-1 p-4 bg-card border border-border">
+                    <span class="text-xs text-muted block">Exploring</span>
+                    <span class="text-white font-medium">AI &amp; Data Science Fundamentals</span>
+                </div>
+                <div class="space-y-1 p-4 bg-card border border-border">
+                    <span class="text-xs text-muted block">Studying</span>
+                    <span class="text-white font-medium">Cinema Narrative &amp; Subtext</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS / TECH STACK SECTION -->
+        <section id="skills" class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+            <div>
+                <span class="font-mono text-xs text-accent-red tracking-widest uppercase">03 / Capabilities</span>
+                <h2 class="text-2xl font-semibold text-white mt-2">Toolkit &amp; Strengths</h2>
+                <p class="text-muted text-sm mt-2">A balanced blend of human communication and foundational technical building blocks.</p>
+            </div>
+
+            <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Non-Tech / Core -->
+                <div class="p-6 bg-surface border border-border space-y-4">
+                    <h3 class="font-mono text-xs text-muted tracking-widest uppercase">Core Strengths</h3>
+                    <ul class="space-y-2 text-sm text-[#D1D5DB]">
+                        <li class="flex items-center gap-2">
+                            <span class="w-1 h-1 bg-accent-red rounded-full"></span> Communication &amp; Expression
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="w-1 h-1 bg-accent-red rounded-full"></span> Active Listening &amp; Empathy
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="w-1 h-1 bg-accent-red rounded-full"></span> Team Working &amp; Mediation
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="w-1 h-1 bg-accent-red rounded-full"></span> Focused Ambition &amp; Drive
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Technical & Tools -->
+                <div class="p-6 bg-surface border border-border space-y-4">
+                    <h3 class="font-mono text-xs text-muted tracking-widest uppercase">Tech &amp; Tools</h3>
+                    <ul class="space-y-2 text-sm text-[#D1D5DB]">
+                        <li class="flex items-center gap-2">
+                            <span class="w-1 h-1 bg-accent-blue rounded-full"></span> HTML, CSS, JavaScript (Basics)
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="w-1 h-1 bg-accent-blue rounded-full"></span> Python (In Progress)
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="w-1 h-1 bg-accent-blue rounded-full"></span> VS Code
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="w-1 h-1 bg-accent-blue rounded-full"></span> ChatGPT, Gemini, Claude
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE / EDUCATION SECTION -->
+        <section id="experience" class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+            <div>
+                <span class="font-mono text-xs text-accent-red tracking-widest uppercase">04 / Journey</span>
+                <h2 class="text-2xl font-semibold text-white mt-2">Education &amp; Background</h2>
+            </div>
+
+            <div class="md:col-span-2 space-y-8 border-l border-border pl-6 ml-0 md:ml-4">
+                <div class="relative space-y-2">
+                    <div class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-black border-2 border-accent-red"></div>
+                    <span class="font-mono text-xs text-muted">2026 — 2030</span>
+                    <h3 class="text-lg font-medium text-white">B.Tech in Artificial Intelligence &amp; Data Science</h3>
+                    <p class="text-sm text-muted">JECRC Foundation (RTU Affiliated College)</p>
+                    <p class="text-xs text-muted pt-1">Currently in first year, focused on laying strong academic and interpersonal foundations.</p>
+                </div>
+
+                <div class="relative space-y-2">
+                    <div class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-black border-2 border-border"></div>
+                    <span class="font-mono text-xs text-muted">Schooling</span>
+                    <h3 class="text-lg font-medium text-white">Dronacharya Public School</h3>
+                    <p class="text-sm text-muted">Raipur (C.G.)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACHIEVEMENTS SECTION -->
+        <section id="achievements" class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+            <div>
+                <span class="font-mono text-xs text-accent-red tracking-widest uppercase">05 / Milestones</span>
+                <h2 class="text-2xl font-semibold text-white mt-2">Achievements</h2>
+            </div>
+
+            <div class="md:col-span-2 space-y-4">
+                <div class="p-6 bg-surface border border-border flex items-center justify-between">
+                    <div>
+                        <span class="font-mono text-xs text-accent-red block mb-1">Competition</span>
+                        <h3 class="text-white font-medium">First Prize — IMO School Category</h3>
+                    </div>
+                    <span class="font-mono text-xs text-muted">International Mathematics Olympiad</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="p-8 md:p-12 bg-surface border border-border text-center space-y-6">
+            <span class="font-mono text-xs text-accent-red tracking-widest uppercase">06 / Connect</span>
+            
+            <h2 class="text-3xl md:text-4xl font-semibold text-white tracking-tight">
+                Let's Talk.
+            </h2>
+            
+            <p class="text-muted max-w-md mx-auto text-sm leading-relaxed">
+                Always open to connecting with fellow students, collaborators, or anyone wanting to discuss tech, ideas, or cinema.
+            </p>
+
+            <div class="pt-4 flex flex-wrap justify-center gap-4">
+                <a href="mailto:aravmjecrc@gmail.com" class="inline-flex items-center gap-2 px-6 py-3 bg-white text-black text-sm font-medium hover:bg-[#E0E0E0] transition-colors">
+                    <span>aravmjecrc@gmail.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/arav-mathur-954584421" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-card border border-border text-white text-sm hover:border-muted transition-colors">
+                    <span>LinkedIn Profile</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-border py-12">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-muted">
+            <div>
+                <span class="text-white font-medium">ARAV MATHUR</span> © 2026
+            </div>
+            <div class="italic text-[#666666]">
+                "If you did no good to the world, there is no good in the world."
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="mailto:aravmjecrc@gmail.com" class="hover:text-white transition-colors">Email</a>
+                <a href="https://www.linkedin.com/in/arav-mathur-954584421" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
